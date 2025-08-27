@@ -21,6 +21,14 @@ with varying cylindrical obstacles and another with obstacles of different types
 training. The proposed model shows accurate long-term predictions, robust generalization to unseen
 geometries, and substantial speedups compared to traditional numerical solvers.
 
+<div align="center">
+
+
+<img src="data/resources/Ux_error.gif" width="70%">
+<img src="data/resources/Uy_error.gif" width="70%">
+<img src="data/resources/P_error.gif" width="70%">
+
+</div>
 
 ## Installation
 
