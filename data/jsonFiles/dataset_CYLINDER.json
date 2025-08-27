@@ -1,0 +1,36 @@
+{
+  "project_name": "TIMGN",
+  "dataset": {
+    "folder": "weights",
+    "type": "fluid",
+    "dt": 0.01,
+    "samplingFactor": 1,
+    "dataset_dim": "2D",
+    "state_variables": ["Ux", "Uy", "P"],
+    "datasetPaths": {
+      "train": "PATH_TO_DATA/train.h5",
+      "val": "PATH_TO_DATA/valid.h5",
+      "test": "PATH_TO_DATA/test/test_xx.h5"
+    }
+  },
+  "model": {
+    "dim_hidden": 128,
+    "n_layers": 2,
+    "passes": 15,
+    "filters": 1,
+    "seed": 1,
+    "dropout": 0.0,
+    "initial_lr": 1e-4,
+    "final_lr": 1e-6,
+    "warmup_steps": 3e5,
+    "lambda_deg_start": 0.0,
+    "lambda_deg_end": 1e-1,
+    "lambda_deg_warmup_start": 1e6,
+    "lambda_deg_warmup_end": 3e6,
+    "decay_steps": 8e6,
+    "noise_var": 2e-2,
+    "batch_size": 2,
+    "max_epoch": 35,
+    "rollout_freq": 5
+  }
+}
